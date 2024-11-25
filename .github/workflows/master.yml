@@ -17,4 +17,4 @@ jobs:
         server: malikqasim.info
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }} 
-        verbose: true 
+        log-level: debug
