@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
   <!-- CSS Color scheme--> 
-  <link id="color-scheme" rel="stylesheet" href="{% static 'css/colors/main-royalblue.css' %}">
+  <link id="color-scheme" rel="stylesheet" href="{% static 'css/colors/main-indigo.css' %}">
 
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
@@ -51,7 +51,7 @@
   <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
       <!-- Navbar Logo-->
       {% for logo in Home_Page_Data %}
-      <img class="img-fluid" src="{{logo.nav_logo}}" alt="">
+      <img class="img-fluid" src="{{logo.nav_logo.url}}" alt="">
       {% endfor %}
     </a>
     <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
